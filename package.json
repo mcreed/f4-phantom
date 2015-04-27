@@ -1,13 +1,15 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.3",
-  "description": "Heroku PhantomJS",
+  "name": "f4-phantom",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "PhantomJS test",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "express": "~4.9.x",
+    "phantom": "^0.7.2"
   },
   "engines": {
     "node": "0.12.2"
@@ -15,14 +17,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mcreed/f4-phantom"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "phantom": "^0.7.2"
   }
 }
