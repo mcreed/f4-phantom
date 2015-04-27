@@ -16,12 +16,11 @@ app.get('/', function(request, response) {
 	phantom.create(function (ph) {
 		ph.createPage(function (page) {
 			page.open(page_url, function (status) {
-
 				console.log("opened url? ", status);
 				page.getContent(function (content) {
+					ph.exit();
 					response.send(content);
 				});
-
 		    });
 		});
 	});
